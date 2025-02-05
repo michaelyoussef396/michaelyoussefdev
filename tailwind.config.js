@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         white: "#ffffff",
         paragraphGray : "#8C8C8C", 
+        primary: "#F52A03",
       }
     },
   },

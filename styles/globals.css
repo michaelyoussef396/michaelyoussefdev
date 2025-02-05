@@ -6,6 +6,8 @@ body {
   font-family: var(--font-raleway), sans-serif;
 }
 
+/* Text Styles */
+
 .heading-1 {
   font-family: var(--font-raleway), sans-serif;
   font-weight: 500;
@@ -462,4 +464,44 @@ body {
   .ticker-regular-heading {
     font-size: 60px;
   }
+}
+
+/* Link Styles */
+.link-white {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.44, 0.56, 1, 1) 0s;
+}
+
+.link-white:hover {
+  color: var(--color-primary);
+  text-decoration: none; 
+}
+
+.link-white.current {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+
+.link-white-with-opacity {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.44, 0, 0.56, 1) 0s;
+}
+
+.link-white-with-opacity:hover {
+  color: #ffffff;
+  text-decoration: none; 
+}
+
+.link {
+  color: var(--color-paragraphGray);
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.44, 0, 0.56, 1) 0s;
+}
+
+.link:hover {
+  color: var(--color-white);
+  text-decoration: none; 
 }
