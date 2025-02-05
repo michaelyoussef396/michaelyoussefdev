@@ -11,9 +11,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        primary: "#F52A03",
+        orange: "f95c28",
+        white10: 'rgba(255, 255, 255, 0.1)',
         white: "#ffffff",
         paragraphGray : "#8C8C8C", 
-        primary: "#F52A03",
+        darkGray: "#201F1F",
+        dark: '#0E0E0E',
+        black: "#000000",
       }
     },
   },
