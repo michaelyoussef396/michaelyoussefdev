@@ -2,6 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --font-geist-sans: "Geist", sans-serif;
+  --font-geist-mono: "Geist Mono", monospace;
+  --font-raleway: "Raleway", sans-serif;
+  --font-libre-baskerville: "Libre Baskerville", serif;
+}
+
+/* Utility classes */
+.font-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono);
+}
+
+.font-raleway {
+  font-family: var(--font-raleway);
+}
+
+.font-libre-baskerville {
+  font-family: var(--font-libre-baskerville);
+}
+
+
 body {
   font-family: var(--font-raleway), sans-serif;
 }
@@ -504,4 +529,54 @@ body {
 .link:hover {
   color: var(--color-white);
   text-decoration: none; 
+}
+
+/* Home page Styles */
+
+.home-main-container {
+  width: 100vw;
+  max-width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--color-dark);
+  overflow: hidden;
+  padding: 0px;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: absolute;
+  border-radius: 0px;
+}
+
+@media (max-width: 1279px) and (min-width: 992px) {
+  .home-main-container {
+    width: 992px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-main-container {
+    width: 375px;
+  }
+}
+
+.header {
+  box-sizing: border-box;
+  width: 1280px;
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+  background-color: #0e0e0e;
+  overflow: hidden;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 0;
+  position: fixed;
+  border-radius: 0px 0px 0px 0px;
 }
